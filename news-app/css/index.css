@@ -146,6 +146,8 @@ hr {
   align-content: center;
   align-items: center;
   width: 100%;
+  padding-bottom: 15px;
+  border-bottom: 5px double #838383;
 }
 
 .container > .topic-flex-section > ul {
@@ -260,4 +262,94 @@ hr {
 
 .article-container > .fast-post > .fast-article > img {
   width: 96%;
+}
+
+.footer-container {
+  display: flex;
+  width: 86%;
+  padding: 0px 0px;
+  margin: 0px auto;
+  border-top: 5px double #838383;
+}
+
+.footer-container > h2 {
+  font-family: "Lugrasimo";
+  font-size: 32px;
+  font-weight: bolder;
+  padding: 5px 0px;
+}
+
+.footer-container > .foot-divide {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 5px;
+}
+
+.footer-container > .foot-divide > .grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 85%;
+}
+
+.footer-container > .foot-divide > .grid > .col {
+  list-style: none;
+  font-size: 14px;
+}
+
+.footer-container > .foot-divide > .grid > .col > li.strong {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.footer-container > .foot-divide > .grid > .col > li {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.footer-container > .foot-divide > .acc {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 20px;
+  border-left: 2px solid #8383837a;
+}
+
+.footer-container > .foot-divide > .acc > .acc-1 {
+  list-style: none;
+  font-size: 16px;
+}
+
+.footer-container > .foot-divide > .acc > .acc-1 > li.strong {
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.footer-container > .foot-divide > .acc > .acc-1 > li {
+  width: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-container > .cp-rights {
+  border-top: 1px solid #8383837a;
+  margin-top: 10px;
+  padding: 10px 0px;
+}
+
+.footer-container > .cp-rights > .rights-policy {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-container > .cp-rights > .rights-policy > li {
+  cursor: pointer;
+  font-size: 12px;
+  color: #444444;
 }
