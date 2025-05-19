@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lugrasimo&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=UnifrakturMaguntia&display=swap");
+
+#reader-container {
+  width: 50vw;
+  display: flex;
+  margin: 25px auto;
+  font-family: "Lato";
+}
+
+#reader-container > .reader {
+  width: 100%;
+  font-size: 16px;
+}
+
+#reader-container > .reader > .read-head {
+  justify-self: center;
+}
+
+#reader-container > .reader > .read-head > strong {
+  font-size: 18px;
+  font-weight: 800;
+  color: brown;
+  margin-bottom: 8px;
+}
+
+#reader-container > .reader > .read-head > h2 {
+  font-size: 32px;
+  margin: 5px 0px;
+  font-weight: 700;
+}
+
+#reader-container > .reader > .read-head > p {
+  font-size: 18px;
+  color: #858585ce;
+  margin-bottom: 10px;
+  padding: 2px 0px;
+  font-weight: 400;
+}
+
+#reader-container > .reader > .read-body {
+  width: 100%;
+  font-size: 18px;
+  line-height: 25px;
+  color: #2b2b2b;
+  line-break: strict;
+}
+
+#reader-container > .reader > .read-body > img {
+  width: 50vw;
+  margin: 10px auto;
+  border-bottom: 5px double #70707088;
+  padding-bottom: 20px;
+}
+
+
+#reader-container > .reader > .read-body > p {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 5px 2px;
+}
