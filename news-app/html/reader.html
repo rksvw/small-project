@@ -13,6 +13,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/comment.css">
   </head>
   <body>
     <!-- Placeholder for header -->
@@ -141,6 +142,9 @@
       </div>
     </div>
 
+    <!-- Comment Placeholder -->
+    <div id="comment-placeholder"></div>
+
     <!-- Footer placeholder -->
     <div id="footer-placeholder"></div>
 
@@ -178,8 +182,28 @@
           console.log("Failed to load header: ", error);
         }
       }
+
+      async function loadComment() {
+        try {
+          const res = await fetch("/html/components/comment.html");
+          const text = await res.text();
+
+          // Create a temporary DOM element to parse the HTML
+          const tempDev = document.createElement("div");
+          tempDev.innerHTML = text;
+
+          // Extract the .head-containers from the fetched content
+          const comment = tempDev.querySelector(".comment-container");
+
+          // Append it to the placeholder
+          document.getElementById("comment-placeholder").appendChild(comment);
+        } catch (error) {
+          console.log("Failed to load Comment: ", error);
+        }
+      }
       loadHeader();
       loadFooter();
+      loadComment();
     </script>
   </body>
 </html>
