@@ -1,0 +1,35 @@
+{
+  "name": "xtra-viz-times",
+  "version": "1.0.0",
+  "description": "Xtra Viz Times is a web application that provides a platform for users to read free news articles and blogs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "",
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "Xtra Viz Times",
+    "news",
+    "blogs",
+    "articles"
+  ],
+  "dependencies": {
+    "axios": "^1.9.0",
+    "cheerio": "^1.0.0",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  },
+  "devDependencies": {
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "ritik-sharma",
+  "license": "ISC",
+  "type": "commonjs"
+}

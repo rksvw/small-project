@@ -197,6 +197,7 @@ hr {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
+  cursor: pointer;
   margin: 20px 0px;
 }
 
